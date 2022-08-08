@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title><%= locals.title %></title>
+        <link rel="stylesheet" href="/css/home.css">
+    </head>
+    <body>
+        <!-- third party styling -->
+        <script src="https://kit.fontawesome.com/62de8261c3.js" crossorigin="anonymous"></script>
+
+        <!-- personal styling -->
+        <h1 id="page-heading">
+            <i class="fas fa-address-book"></i>
+            Contact List
+        </h1>
+
+        <div class="center">
+        <ul>
+            <% for ( let i of contact_list) { %>
+            <li class="contact">
+                <div class="flex-container">
+                    <p class="flex-item"><%= i.name %></p>
+                    <p class="flex-item"><%= i.phone %></p>
+                </div>
+
+                <div class="delete-button">
+                    <a href="/delete-contact/?id=<%= i._id %>">
+                        <i class="fa-solid fa-trash-alt"></i></a>
+                </div>
+
+            </li>
+            <% } %>
+        </ul>
+    </div>
+
+        <form action="create_contact" method="POST">
+            <input type="text" name="name" placeholder="Enter name" class="inputya" required>
+            <input type="number" name="phone" placeholder="Enter phone number" class="inputya" required>
+
+            <button type="submit" class="add-button">
+                <i class="fas fa-user-plus"></i>
+            </button>
+        </form>
+        <script type="text/javascript" src="/js/home.js"></script>
+    </body>
+</html>

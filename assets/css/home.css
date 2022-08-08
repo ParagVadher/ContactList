@@ -1,0 +1,149 @@
+body{
+    text-align: center;
+    vertical-align: center;
+    background-color:#3b53a1;
+}
+
+/* table{
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-collapse: collapse; border: none;-
+} */
+
+.contact{
+    align-items: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #061133;
+
+    border: none;
+    border-bottom: 2px solid #172a6b;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    height: fit-content;
+    width: 250px;
+    vertical-align: baseline;
+    justify-content: center;
+    
+    display: flex;
+    background-color: #6c8cf5;
+}
+
+.contact .flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+
+
+    
+}
+ul {list-style-type:none; }
+
+.center {
+    border: none;
+    display: flex;
+    justify-content: center;
+    }
+
+.contact:hover{
+    text-align: middle;
+    font-family: sans-serif;
+    color: white;
+    
+    border-right: 2px solid;
+    border-bottom: 1px solid;
+    border-color: rgba(255, 235, 205, 0.342);
+
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset; */
+}
+
+.inputya{
+    background-color: #172a6b;
+    border-bottom: 2px solid blanchedalmond;
+    color: blanchedalmond;
+}
+
+::placeholder{
+    color: #a5b8f8;
+}
+
+.contact .delete-button {
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 10%;
+    
+}
+
+.contact .delete-button a{
+    color: white;
+    background-color: black;
+}
+
+.contact .delete-button a:hover{
+    color: grey;
+    background-color: black;
+}
+.add-button {
+    color: white;
+    background-color: black;
+}
+
+.add-button:hover{
+    color: grey;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* p{
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    vertical-align: auto;
+    font-family: sans-serif;
+    font-weight: bold;
+    
+    
+    color: blanchedalmond;
+    border: 0px solid #cdcdcd;
+    border-radius: 0px;
+    border-color: whitesmoke; 
+    background-color: rgb(83, 121, 247);
+    font-size: 15px;
+    
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+
+/* p:hover{
+    text-align: center;
+    font-family: sans-serif;
+    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+} */
+
+#page-heading{
+    color: blanchedalmond;
+    text-align: center;
+    margin-top: 25px;
+    font-family: sans-serif;
+}
+
+input{
+    border: none;
+    border-bottom: 1px;
+    border-bottom-style: ridge;
+    border-bottom-color: black;
+}
