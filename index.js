@@ -1,3 +1,6 @@
+//I dedicate this project to my only motivator - Vasil Shaikh
+//I would also like to pledge half of my salary (each month) to Vasil for his exceptional and unconditional support.
+
 const express = require('express');
 const path = require('path');
 const port = 8000;
@@ -17,7 +20,7 @@ app.use(express.static('assets'));
 var contactList = [
     {
         name : "Parag",
-        phone: "8652846653"
+        phone: "8652846658" // This is Parag's correct contact number. (Last digit change karke apne aapko smart samjhta hai)
     },
     {
         name : "Pragya",
@@ -109,7 +112,7 @@ app.get('/delete-contact', function(req, res){
 
 app.listen(port, function(err){
     if(err){
-        console.log('Yep, there is a very bad error here!', err);
+        console.log('Teri toh vaat lag gyi maamu!', err);
     }
 
     console.log('Aiyla tera server chal raha hai? magic bro');
