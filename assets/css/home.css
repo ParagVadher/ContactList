@@ -1,7 +1,31 @@
+/* colours i wanna use
+body 
+background-color: #020923
+#box
+background-color: #1c233d
+border-color: #38539c
+
+text #8e9198
+highlighted menu text #5684fd
+button colour #5684fd
+placeholder text: #616578
+
+*/
+
+
 body{
     text-align: center;
     vertical-align: center;
-    background-color:#3b53a1;
+    background-color:#020923;
+}
+
+#box{
+    background-color: #1c233d;
+    width: 550px;
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* table{
@@ -135,15 +159,67 @@ ul {list-style-type:none; }
 } */
 
 #page-heading{
-    color: blanchedalmond;
+    color: #5684fd;
     text-align: center;
     margin-top: 25px;
     font-family: sans-serif;
+    padding-top: 8px;
 }
 
-input{
+/* TABLE STYLING */
+table{
+    border: 1px solid black;
+    width: 100%; 
     border: none;
-    border-bottom: 1px;
-    border-bottom-style: ridge;
-    border-bottom-color: black;
+}
+
+/* Style for inputs, labels and buttons(basically form style) */
+.input-wrapper {
+    position: relative;
+}
+
+/* description */
+.inputza{
+    min-width: 520px;
+    line-height: 50px;
+    background-color: #1c233d;
+}
+  
+input {
+  border: 1px solid gray;
+  border-radius: 5px;
+  position: relative;
+  min-width: 240px;
+  margin: 10px;
+  line-height: 20px;
+  background-color: #1c233d;
+  border-bottom: 1px solid blanchedalmond;
+  color: blanchedalmond;
+}
+  
+
+
+label {
+  color: #8e9198;
+  font-size: smaller;
+  position: absolute;
+  top: 0.2ex;
+  z-index: 1;
+  left: 2em;
+  border-color: #38539c;
+  background-color: #1c233d;
+  padding: 0 5px;
+}
+
+select{
+  border: 1px solid gray;
+  min-width: 250px;
+  border-radius: 6px;
+  position: relative;
+  width: 200px;
+  margin: 10px;
+  line-height: 40px;
+  background-color: #1c233d;
+  border-bottom: 1px solid blanchedalmond;
+  color: blanchedalmond;
 }

@@ -7,39 +7,67 @@
         <!-- third party styling -->
         <script src="https://kit.fontawesome.com/62de8261c3.js" crossorigin="anonymous"></script>
 
+        <div id="box">
         <!-- personal styling -->
         <h1 id="page-heading">
             <i class="fas fa-address-book"></i>
             Contact List
         </h1>
+        <form action="add_contact" method="post">
+            <table>
+                <tr>
+                    <td colspan="2" class="input-wrapper">
+                        <label for="description">DESCRIPTION</label>
+                        <input type="text" name="description" class="inputza" width="100%" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="input-wrapper">
+                        <label for="category">CHOOSE A CATEGORY</label>
+                        <select id="category" name="CATEGORY" class="row2">
+                            <option value="work">Work</option>
+                            <option value="home">Home</option>
+                            <option value="college">College</option>
+                            <option value="something">Something</option>
+                        </select>
+                    </td>
+                    
+                    <td class="input-wrapper" class="row2">
+                        <label for="Date">DUE DATE</label>
+                        <input type="date">
+                    </td>
+                </tr>
+            </table>
+        </form>
 
         <div class="center">
-        <ul>
-            <% for ( let i of contact_list) { %>
-            <li class="contact">
-                <div class="flex-container">
-                    <p class="flex-item"><%= i.name %></p>
-                    <p class="flex-item"><%= i.phone %></p>
-                </div>
+            <ul>
+                <% for ( let i of contact_list) { %>
+                <li class="contact">
+                    <div class="flex-container">
+                        <p class="flex-item"><%= i.name %></p>
+                        <p class="flex-item"><%= i.phone %></p>
+                    </div>
 
-                <div class="delete-button">
-                    <a href="/delete-contact/?id=<%= i._id %>">
-                        <i class="fa-solid fa-trash-alt"></i></a>
-                </div>
+                    <div class="delete-button">
+                        <a href="/delete-contact/?id=<%= i._id %>">
+                            <i class="fa-solid fa-trash-alt"></i></a>
+                    </div>
 
-            </li>
-            <% } %>
-        </ul>
-    </div>
+                </li>
+                <% } %>
+            </ul>
+        </div>
 
         <form action="create_contact" method="POST">
             <input type="text" name="name" placeholder="Enter name" class="inputya" required>
             <input type="number" name="phone" placeholder="Enter phone number" class="inputya" required>
 
             <button type="submit" class="add-button">
-                <i class="fas fa-user-plus"></i>
+                Add Contact <i class="fas fa-user-plus"></i>
             </button>
         </form>
         <script type="text/javascript" src="/js/home.js"></script>
+    </div>
     </body>
 </html>
